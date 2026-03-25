@@ -16,7 +16,7 @@ const stats = [
 ];
 
 const navItems = ["Хаусботы", "Дебаркадеры", "Баня на воде", "Водная техника", "Цены", "О нас"];
-const navSlugs = ["houseboats", "debarcaders", "banya", "watercraft", "pricing", "about"];
+const navSlugs = ["/houseboats", "#debarcaders", "#banya", "#watercraft", "#pricing", "#about"];
 
 const HeroSection = () => {
   return (
@@ -35,13 +35,13 @@ const HeroSection = () => {
             </Link>
             <nav className="hidden ml-12 space-x-8 md:flex">
               {navItems.map((item, index) => (
-                <a
+                <Link
                   key={item}
-                  href={`#${navSlugs[index]}`}
+                  to={navSlugs[index]}
                   className="text-gray-300 hover:text-white transition-colors"
                 >
                   {item}
-                </a>
+                </Link>
               ))}
             </nav>
           </div>
