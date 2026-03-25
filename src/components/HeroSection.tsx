@@ -31,7 +31,7 @@ const HeroSection = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center gap-2 text-white text-2xl font-bold">
               <Icon name="Anchor" size={28} className="text-blue-400" />
-              AquaStay
+              По Волге Дом
             </Link>
             <nav className="hidden ml-12 space-x-8 md:flex">
               {navItems.map((item, index) => (
