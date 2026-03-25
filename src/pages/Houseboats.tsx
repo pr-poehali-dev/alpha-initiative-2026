@@ -56,20 +56,16 @@ const houseboats = [
 
 const Houseboats = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-black via-[#020d1a] to-blue-950">
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_right,rgba(14,80,140,0.25),transparent_70%)] pointer-events-none"></div>
+    <div className="min-h-screen" style={{background: "linear-gradient(135deg, #e8f5e9 0%, #f0faf0 40%, #d4f0d4 100%)"}}>
 
       {/* Header */}
       <header className="relative z-10 px-6 py-4 mx-auto w-full max-w-7xl">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center gap-2 text-white text-2xl font-bold">
-            <Icon name="Anchor" size={28} className="text-blue-400" />
+          <Link to="/" className="flex items-center gap-2 text-2xl font-bold" style={{color: "#1a8fc1"}}>
+            <Icon name="Anchor" size={28} style={{color: "#1a8fc1"}} />
             По Волге Дом
           </Link>
-          <Link
-            to="/"
-            className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors"
-          >
+          <Link to="/" className="flex items-center gap-2 transition-colors font-medium" style={{color: "#3a7a50"}}>
             <Icon name="ArrowLeft" size={18} />
             На главную
           </Link>
@@ -77,50 +73,47 @@ const Houseboats = () => {
       </header>
 
       {/* Page Title */}
-      <div className="relative z-10 px-6 pt-10 pb-6 mx-auto max-w-7xl text-center">
-        <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-300 text-sm">
+      <div className="px-6 pt-10 pb-6 mx-auto max-w-7xl text-center">
+        <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full border text-sm font-medium" style={{borderColor: "#90d4a0", background: "#d4f5da", color: "#2e7d4f"}}>
           <Icon name="Ship" size={16} />
           Все хаусботы
         </div>
-        <h1 className="text-4xl font-bold text-white md:text-5xl">Хаусботы на Волге</h1>
-        <p className="mt-4 text-gray-400 max-w-xl mx-auto">
+        <h1 className="text-4xl font-bold md:text-5xl" style={{color: "#1b4332"}}>Хаусботы на <span style={{color: "#1a8fc1"}}>Волге</span></h1>
+        <p className="mt-4 max-w-xl mx-auto" style={{color: "#5a9a6a"}}>
           Выберите свой идеальный дом на воде — от уютного для двоих до просторного для всей компании
         </p>
       </div>
 
       {/* Cards */}
-      <div className="relative z-10 px-6 pb-20 mx-auto max-w-7xl">
+      <div className="px-6 pb-20 mx-auto max-w-7xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {houseboats.map((boat) => (
             <div
               key={boat.id}
-              className="flex flex-col rounded-2xl overflow-hidden border border-blue-900/50 bg-blue-950/20 backdrop-blur-sm hover:border-blue-500/40 transition-all duration-300 hover:-translate-y-1"
+              className="flex flex-col rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              style={{borderColor: "#a8ddb5", background: "#f0faf2"}}
             >
               {/* Photo */}
               <div className="relative h-52 overflow-hidden">
-                <img
-                  src={boat.image}
-                  alt={boat.name}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-3 right-3 bg-black/60 backdrop-blur-sm text-white text-sm font-bold px-3 py-1 rounded-full">
+                <img src={boat.image} alt={boat.name} className="w-full h-full object-cover" />
+                <div className="absolute top-3 right-3 text-white text-sm font-bold px-3 py-1 rounded-full" style={{background: "rgba(26,143,193,0.85)"}}>
                   от {boat.price.toLocaleString("ru-RU")} ₽/сут
                 </div>
               </div>
 
               {/* Content */}
               <div className="flex flex-col flex-1 p-5">
-                <h3 className="text-xl font-bold text-white mb-2">{boat.name}</h3>
-                <p className="text-gray-400 text-sm leading-relaxed mb-4">{boat.description}</p>
+                <h3 className="text-xl font-bold mb-2" style={{color: "#1b4332"}}>{boat.name}</h3>
+                <p className="text-sm leading-relaxed mb-4" style={{color: "#5a9a6a"}}>{boat.description}</p>
 
                 {/* Specs */}
-                <div className="flex items-center gap-4 mb-4 text-gray-300 text-sm">
+                <div className="flex items-center gap-4 mb-4 text-sm" style={{color: "#3a7a50"}}>
                   <span className="flex items-center gap-1">
-                    <Icon name="Users" size={14} className="text-blue-400" />
+                    <Icon name="Users" size={14} style={{color: "#1a8fc1"}} />
                     до {boat.capacity} чел.
                   </span>
                   <span className="flex items-center gap-1">
-                    <Icon name="Maximize2" size={14} className="text-blue-400" />
+                    <Icon name="Maximize2" size={14} style={{color: "#1a8fc1"}} />
                     {boat.area} м²
                   </span>
                 </div>
@@ -128,10 +121,7 @@ const Houseboats = () => {
                 {/* Features */}
                 <div className="flex flex-wrap gap-2 mb-5">
                   {boat.features.map((f) => (
-                    <span
-                      key={f}
-                      className="px-2 py-1 rounded-md bg-blue-900/40 text-blue-300 text-xs border border-blue-800/50"
-                    >
+                    <span key={f} className="px-2 py-1 rounded-md text-xs border" style={{background: "#d4f5da", color: "#2e7d4f", borderColor: "#90d4a0"}}>
                       {f}
                     </span>
                   ))}
@@ -139,7 +129,7 @@ const Houseboats = () => {
 
                 {/* Book Button */}
                 <div className="mt-auto">
-                  <button className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-500 text-white font-semibold rounded-xl transition-colors">
+                  <button className="w-full flex items-center justify-center gap-2 px-6 py-3 text-white font-semibold rounded-xl transition-colors" style={{background: "#1a8fc1"}}>
                     <Icon name="CalendarCheck" size={18} />
                     Забронировать
                   </button>
