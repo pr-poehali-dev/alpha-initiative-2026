@@ -67,8 +67,8 @@ const HeroSection = () => {
         </div>
 
         <h1 className="max-w-4xl mx-auto text-4xl font-bold text-white md:text-5xl lg:text-6xl leading-tight">
-          Ваш отдых на воде —<br />
-          <span className="text-blue-400">хаусботы и понтоны</span> под ключ
+          Ваш отдых на <span className="text-blue-400">Волге</span> —<br />
+          под ключ
         </h1>
         <p className="max-w-2xl mx-auto mt-6 text-lg text-gray-300">
           Бронируйте хаусботы, дебаркадеры, баню на понтоне и водную технику.<br />
