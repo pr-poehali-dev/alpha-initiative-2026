@@ -16,7 +16,7 @@ const stats = [
 ];
 
 const navItems = ["Хаусботы", "Дебаркадер", "Баня на воде", "Водная техника", "Цены", "О нас"];
-const navSlugs = ["/houseboats", "/debarcader", "#banya", "#watercraft", "#pricing", "#about"];
+const navSlugs = ["/houseboats", "/debarcader", "/banya", "#watercraft", "#pricing", "#about"];
 
 const HeroSection = () => {
   return (
