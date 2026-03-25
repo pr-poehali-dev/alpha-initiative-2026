@@ -9,6 +9,7 @@ import Houseboats from "./pages/Houseboats";
 import Debarcader from "./pages/Debarcader";
 import Banya from "./pages/Banya";
 import Odyssey from "./pages/Odyssey";
+import Houseboat from "./pages/Houseboat";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/debarcader" element={<Debarcader />} />
           <Route path="/banya" element={<Banya />} />
           <Route path="/odyssey" element={<Odyssey />} />
+          <Route path="/houseboat" element={<Houseboat />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

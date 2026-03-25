@@ -15,53 +15,47 @@ const houseboats = [
   },
   {
     id: 1,
-    name: "Волжский закат",
-    description: "Уютный хаусбот для двоих с панорамными окнами и террасой. Идеален для романтического отдыха или тихого уединения на Волге. Есть кухня, спальня и открытая палуба.",
-    price: 7500,
-    capacity: 2,
-    area: 35,
-    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/files/0d04ea55-dca1-4a0e-b5bc-4200713caa31.jpg",
-    features: ["Панорамные окна", "Открытая терраса", "Кухня", "Wi-Fi"],
+    name: "Плавдом 2022 — «Волга»",
+    description: "Комфортабельный плавдом 2022 г.п. с баней на дровах, верхней палубой и банкетной зоной на 12 персон. Салон с диваном, каюта с двуспальной кроватью, душ и санузел.",
+    price: 45000,
+    capacity: 15,
+    area: 84,
+    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/bucket/e1da963c-d2c9-4d16-ac95-82180d47946e.jpeg",
+    features: ["Баня на дровах", "Верхняя палуба", "Каюта 2-спальная", "Барбекю"],
+    slug: "houseboat",
   },
   {
     id: 2,
-    name: "Речной простор",
-    description: "Двухэтажный хаусбот с просторной крышей-палубой и шезлонгами. Большие панорамные окна, 2 спальни, гостиная с видом на реку.",
-    price: 12000,
-    capacity: 4,
-    area: 60,
-    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/files/9e4fd67b-802a-4282-89d9-6e79e93163aa.jpg",
-    features: ["2 спальни", "Крышная палуба", "Шезлонги", "Барбекю"],
+    name: "Плавдом 2022 — «Самара»",
+    description: "Комфортабельный плавдом 2022 г.п. с баней на дровах, верхней палубой и банкетной зоной на 12 персон. Салон с диваном, каюта с двуспальной кроватью, душ и санузел.",
+    price: 45000,
+    capacity: 15,
+    area: 84,
+    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/bucket/e1da963c-d2c9-4d16-ac95-82180d47946e.jpeg",
+    features: ["Баня на дровах", "Верхняя палуба", "Каюта 2-спальная", "Барбекю"],
+    slug: "houseboat",
   },
   {
     id: 3,
-    name: "Деревянная сказка",
-    description: "Камерный хаусбот в деревенском стиле с цветами на палубе и сказочной атмосферой. Вечерняя подсветка, тёплый интерьер, причал с лодкой.",
-    price: 8500,
-    capacity: 2,
-    area: 40,
-    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/files/d338e9af-b704-4e53-98fc-85226a6b7e05.jpg",
-    features: ["Деревянный интерьер", "Лодка в аренду", "Вечерняя подсветка", "Цветочная палуба"],
+    name: "Плавдом 2022 — «Жигули»",
+    description: "Комфортабельный плавдом 2022 г.п. с баней на дровах, верхней палубой и банкетной зоной на 12 персон. Салон с диваном, каюта с двуспальной кроватью, душ и санузел.",
+    price: 45000,
+    capacity: 15,
+    area: 84,
+    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/bucket/e1da963c-d2c9-4d16-ac95-82180d47946e.jpeg",
+    features: ["Баня на дровах", "Верхняя палуба", "Каюта 2-спальная", "Барбекю"],
+    slug: "houseboat",
   },
   {
     id: 4,
-    name: "Семейный берег",
-    description: "Просторный хаусбот для большой компании или семьи с детьми. Широкая палуба, зона барбекю, 3 спальни и место для рыбалки.",
-    price: 16000,
-    capacity: 8,
-    area: 90,
-    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/files/ca697a98-d27d-4797-8a54-12bc6979c034.jpg",
-    features: ["3 спальни", "Зона барбекю", "Рыбалка", "Место для детей"],
-  },
-  {
-    id: 5,
-    name: "VIP Ночная Волга",
-    description: "Премиальный хаусбот с джакузи на палубе, дизайнерским интерьером и ночной подсветкой. Для тех, кто ищет настоящий люкс на воде.",
-    price: 25000,
-    capacity: 4,
-    area: 75,
-    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/files/15ae8200-9a0a-4464-8100-6c1946dba41d.jpg",
-    features: ["Джакузи", "Дизайнерский интерьер", "Ночная подсветка", "Консьерж-сервис"],
+    name: "Плавдом 2022 — «Тольятти»",
+    description: "Комфортабельный плавдом 2022 г.п. с баней на дровах, верхней палубой и банкетной зоной на 12 персон. Салон с диваном, каюта с двуспальной кроватью, душ и санузел.",
+    price: 45000,
+    capacity: 15,
+    area: 84,
+    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/bucket/e1da963c-d2c9-4d16-ac95-82180d47946e.jpeg",
+    features: ["Баня на дровах", "Верхняя палуба", "Каюта 2-спальная", "Барбекю"],
+    slug: "houseboat",
   },
 ];
 
@@ -145,9 +139,9 @@ const Houseboats = () => {
 
                 {/* Buttons */}
                 <div className="mt-auto flex flex-col gap-2">
-                  {boat.id === 0 && (
-                    <Link to="/odyssey" className="w-full flex items-center justify-center gap-2 px-6 py-2 font-medium rounded-xl border transition-colors text-sm" style={{borderColor: "#1a8fc1", color: "#1a8fc1", background: "white"}}>
-                      Подробнее
+                  {(boat.id === 0 || boat.slug === "houseboat") && (
+                    <Link to={boat.id === 0 ? "/odyssey" : "/houseboat"} className="w-full flex items-center justify-center gap-2 px-6 py-2 font-medium rounded-xl border transition-colors text-sm" style={{borderColor: "#1a8fc1", color: "#1a8fc1", background: "white"}}>
+                      Подробнее и тарифы
                     </Link>
                   )}
                   <button className="w-full flex items-center justify-center gap-2 px-6 py-3 text-white font-semibold rounded-xl transition-colors" style={{background: "#1a8fc1"}}>
