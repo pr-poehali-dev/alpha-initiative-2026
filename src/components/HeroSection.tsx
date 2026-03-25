@@ -15,8 +15,8 @@ const stats = [
   { icon: "MapPin", value: "12+", label: "Локаций" },
 ];
 
-const navItems = ["Хаусботы", "Дебаркадер", "Баня на воде", "Водная техника", "Кейтеринг", "О нас"];
-const navSlugs = ["/houseboats", "/debarcader", "/banya", "#watercraft", "/catering", "#about"];
+const navItems = ["О нас", "Хаусботы", "Дебаркадер", "Баня на воде", "Водная техника", "Кейтеринг"];
+const navSlugs = ["#about", "/houseboats", "/debarcader", "/banya", "#watercraft", "/catering"];
 
 const HeroSection = () => {
   return (
