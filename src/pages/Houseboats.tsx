@@ -3,6 +3,17 @@ import Icon from "@/components/ui/icon";
 
 const houseboats = [
   {
+    id: 0,
+    name: "Одиссей — VIP плавдом",
+    description: "Комфортабельный плавдом класса «ВИП» с уникальным дизайном. Просторная кают-компания с кожаным диваном и баром, 2 каюты с двуспальными кроватями, баня на дровах, джакузи и барная стойка на верхней палубе. До 15 гостей.",
+    price: 90000,
+    capacity: 15,
+    area: 120,
+    image: "https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/bucket/33d2d8e0-6200-4f52-aba4-8df9c6ae210c.jpeg",
+    features: ["VIP класс", "Баня на дровах", "Джакузи", "2 каюты", "Барная стойка", "Газовое барбекю"],
+    badge: "VIP",
+  },
+  {
     id: 1,
     name: "Волжский закат",
     description: "Уютный хаусбот для двоих с панорамными окнами и террасой. Идеален для романтического отдыха или тихого уединения на Волге. Есть кухня, спальня и открытая палуба.",
@@ -91,13 +102,18 @@ const Houseboats = () => {
             <div
               key={boat.id}
               className="flex flex-col rounded-2xl overflow-hidden border transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
-              style={{borderColor: "#a8ddb5", background: "#f0faf2"}}
+              style={{borderColor: boat.id === 0 ? "#1a8fc1" : "#a8ddb5", background: boat.id === 0 ? "#e8f4fa" : "#f0faf2"}}
             >
               {/* Photo */}
               <div className="relative h-52 overflow-hidden">
                 <img src={boat.image} alt={boat.name} className="w-full h-full object-cover" />
+                {boat.id === 0 && (
+                  <div className="absolute top-3 left-3 text-white text-xs font-bold px-3 py-1 rounded-full" style={{background: "#1a8fc1"}}>
+                    VIP
+                  </div>
+                )}
                 <div className="absolute top-3 right-3 text-white text-sm font-bold px-3 py-1 rounded-full" style={{background: "rgba(26,143,193,0.85)"}}>
-                  от {boat.price.toLocaleString("ru-RU")} ₽/сут
+                  от {boat.price.toLocaleString("ru-RU")} ₽
                 </div>
               </div>
 
@@ -127,8 +143,13 @@ const Houseboats = () => {
                   ))}
                 </div>
 
-                {/* Book Button */}
-                <div className="mt-auto">
+                {/* Buttons */}
+                <div className="mt-auto flex flex-col gap-2">
+                  {boat.id === 0 && (
+                    <Link to="/odyssey" className="w-full flex items-center justify-center gap-2 px-6 py-2 font-medium rounded-xl border transition-colors text-sm" style={{borderColor: "#1a8fc1", color: "#1a8fc1", background: "white"}}>
+                      Подробнее
+                    </Link>
+                  )}
                   <button className="w-full flex items-center justify-center gap-2 px-6 py-3 text-white font-semibold rounded-xl transition-colors" style={{background: "#1a8fc1"}}>
                     <Icon name="CalendarCheck" size={18} />
                     Забронировать
