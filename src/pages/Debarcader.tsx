@@ -48,7 +48,7 @@ const Debarcader = () => {
         {/* Main photo */}
         <div className="rounded-2xl overflow-hidden border mb-4" style={{borderColor: "#a8ddb5"}}>
           <img
-            src="https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/files/242b7ac6-ab59-484d-9a11-6e34f532ac3e.jpg"
+            src="https://cdn.poehali.dev/projects/0d666c78-fd3a-49f8-b310-c841f997bf41/bucket/dadaf61e-71e9-4a17-b564-a2b9d7d6a296.jpeg"
             alt="Двухэтажный дебаркадер на Волге"
             className="w-full h-80 object-cover"
           />
